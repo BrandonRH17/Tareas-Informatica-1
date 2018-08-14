@@ -1,0 +1,153 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\title{Parcial Recuperacion}
+\author{Brandon Rodríguez }
+\date{Agosto 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Pregunta 1}
+\\
+Su tarea es crear un grafo a partir de estos puentes. Para ello debe:
+\begin{itemize}
+        \item{Definir el conjunto de nodos}
+        \item{Definir el conjunto de vertices}
+\end{itemize}
+\\
+\\
+\includegraphics[height=2cm]{1}
+\\Los nodos estarán representando a los pedazos de tierra que conectan los puentes. 
+\\
+\\
+\\(A,B,C,D)
+\\\
+\\Los Vertices consisten en las parejas ordenadas. 
+\\
+\\
+((A,B),(A,C),(C,D),(D,B),(D,A))
+
+
+
+
+
+\section{Pregunta 2}
+\\
+ \sum_{i=1}^{n}{i}=\frac{n(n+1)}{2}
+\\
+\\
+Caso Base
+\\
+\\
+ \sum_{i=1}^{n}{i}=\frac{1(1+1)}{2}
+ \\
+ \\
+  \sum_{i=1}^{n}{i}=1
+ \\
+ \\
+ 1=1
+ \\
+ \\
+Hipótesis Inductiva
+\\
+\\
+ \sum_{i=1}^{n}{i}=\frac{n(n+1)}{2}
+\\
+\\
+Demostración
+\\
+\\
+ \sum_{i=1}^{n+1}{i}=\frac{(n+1)(n+2)}{2}
+ \\
+ \\
+  \sum_{i=1}^{n}{i}=1+2+3+4..+n+(n+1)
+ \\
+ \\
+  =\frac{n(n+1)}{2}+\frac {n+1}{1}
+ \\
+ \\
+ =\frac{n(n+1)+2(n+1)}{2}
+ \\
+ \\
+  =\frac{(n+1)(n+2)}{2}=\frac{(n+1)(n+2)}{2}
+ \\
+ \\
+ \section{Pregunta 3}
+ \\
+ Definir inductivamente la funcion $\sum(n)$ para numeros naturales unarios la cual tiene
+el efecto de calcular la suma de $1$ hasta $n$. En otras palabras:
+\[
+        \sum(n)=1+2+3+4+\ \ldots\ +n
+\]
+Puede apoyarse de la suma $\oplus$ de numeros naturales unarios para su definici\'on:
+\[
+        a\oplus b =
+                \left\{
+                        \begin{array}{ll}
+                                b  & \mbox{si } a = 0 \\
+                                s(i\oplus b) & \mbox{si } a = s(i)
+                        \end{array}
+                \right.
+\]
+\\
+\\
+\section{Pregunta 4}
+\\
+Demostrar por medio de inducci\'on la conmutatividad de la suma de
+numeros naturales unarios: $a\oplus b = b\oplus a$
+\\
+\\
+Caso Base
+\\
+\\
+0 + n = n + 0
+\\
+\\
+n = n
+\\
+\\
+Hipótesis Inductiva
+\\
+\\
+\sum(n)=1+2+3+4+\ \ldots\ +n
+\\
+\\
+Demostración
+\\
+\\
+n + s(m) = s(n + m) 
+\\
+\\
+= s(m + n)
+\\
+\\
+\\
+\\
+\\
+\\
+\section{Pregunta 5}
+\\
+\\
+Dada la funci\'on $a\geq b$ para numeros naturales unarios:
+\[
+        a\geq b =
+                \left\{
+                        \begin{array}{ll}
+                                s(o)  & \mbox{si } b = o \\
+                                o & \mbox{si } a = o \\
+                                i\geq j & \mbox{si } a = s(i)\ \&\ b = s(j)
+                        \end{array}
+                \right.
+\]
+Demostrar utilizando inducci\'on que $((n\oplus n)\geq n) = s(o)$. Puede
+hacer uso de la asociatividad y comutabilidad de la suma de numeros
+unarios para su demostraci\'on.
+\\
+\\
+
+
+
+\end{document}
