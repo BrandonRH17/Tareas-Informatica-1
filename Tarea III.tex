@@ -1,0 +1,92 @@
+\documentclass[14pt]{article}
+\usepackage[spanish]{babel}
+\author{Brandon Rodriguez}
+\title{Tarea 3}
+
+\begin{document}
+
+\maketitle
+\section{Ejercicio 1}
+$ssso + sssso \newline
+s(ssso + ssso) \newline
+s(s(ssso + sso)) \newline
+s(s(s(ssso + so))) \newline
+s(s(s(s(ssso+o)))) \newline
+s(s(s(s(s(sso+o))))) \newline
+s(s(s(s(s(s(so+o)))))) \newline 
+s(s(s(s(s(s(s(o))))))) \newline$
+7
+
+\section{Ejercicio 2}
+Caso Base
+\\
+Por axiomas pasados, se sabe que cualquier número multiplicado por cero es igual a cero.
+\\
+\\
+Caso Inductivo\\
+$a\otimes b = a + (a*(b-1)) \newline
+a\otimes b = a + (ab-a) \newline
+a\otimes b = a + ab-a \newline
+a\otimes b = ab \newline
+a\otimes b = a\otimes b $
+\\
+
+\section{Ejercicio 3}
+$s(s(s(0))) \otimes 0$ \newline
+ \newline
+Axioma = n por cero es 0
+\\
+\\
+
+{$s(s(s(0)))\otimes s(0)$} \newline
+{$s(s(s(0)))\otimes s(0)$} = ssso + (sss0 *(s0-s0) \newline
+{$s(s(s(0)))\otimes s(0)$} = ssso + (sss0* (0) \newline
+{$s(s(s(0)))\otimes s(0)$} = ssso \newline
+\\
+\\
+\\
+
+{$s(s(s(0)))\otimes s(s(0))$} \newline
+{$s(s(s(0)))\otimes s(s(0))$} = sss0 + (sss0 * (ss0-s0) \newline
+{$s(s(s(0)))\otimes s(s(0))$} =sss0 + (sss0*s0) \newline
+{$s(s(s(0)))\otimes s(s(0))$} = sss0 + sss0 \newline
+{$s(s(s(0)))\otimes s(s(0))$} = ssssss0 \newline
+\\
+\\
+\section{Ejercicio 4}
+
+
+$a\oplus s(s(0))=s(s(a))$ \newline
+$a\oplus s(s(0))=s(0) +s(a)$ \newline
+$a\oplus s(s(0))=s(s(0)) +a$ \newline
+$a\oplus s(s(0))=a\oplus s(s(0))$ \newline
+\newline
+
+$a \otimes b = b \otimes a$ \newline
+$sa \otimes sb = sb \otimes sa$ \newline
+$s(a \otimes b) = s(b \otimes a)$ \newline
+$s(a \otimes b)/s = s(b \otimes a)/s$ \newline
+$a \otimes b = b \otimes a$ \newline
+\newline
+
+
+Caso base C=0 \newline
+$a \otimes (b \otimes 0)=(a\otimes b)\otimes 0$ \newline
+$a \otimes 0=(a\otimes b)\otimes 0$ \newline
+Axioma = n por cero es 0
+\\
+$0=0$ \newline
+\newline
+Caso Inductivo \newline
+$a \otimes (b \otimes c)=(a\otimes b)\otimes c$ \newline
+$a \otimes bc=ab\otimes c$ \newline
+$abc=abc$ \newline
+\newline
+
+
+
+
+
+\end{document}
+\
+\
