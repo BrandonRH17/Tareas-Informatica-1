@@ -8,7 +8,7 @@ zipWith n fs zs  =
 
         (_, []) -> []
 
-        (f::fss, z::zss) -> n f z ::zipWith n fs zs
+        (f::fss, z::zss) -> n f z ::zipWith n fss zss
 
 groupBy : (a -> Bool) -> List a -> (List a, List a) 
 groupBy m list = (siFunciona m list, noFunciona m list)
